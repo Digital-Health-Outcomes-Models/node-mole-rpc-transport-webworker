@@ -34,4 +34,4 @@ function divide(a, b) {
     return a / b;
 }
 
-module.exports = { waitForEvent, sleep, substract, divide, sum, multiply };
+export default { waitForEvent, sleep, substract, divide, sum, multiply };

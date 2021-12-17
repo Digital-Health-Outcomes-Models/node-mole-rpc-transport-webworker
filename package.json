@@ -1,23 +1,23 @@
 {
-    "name": "mole-rpc-transport-webworker",
-    "version": "1.0.0",
-    "description": "Easy way to communicate with webworker using Mole-RPC (JSON RPC library)",
+    "name": "dho-rpc-transport-webworker",
+    "version": "1.0.3",
+    "description": "Easy way to communicate with webworker using dho-rpc (JSON RPC library)",
     "main": "index.js",
     "scripts": {
         "test": "node ./tests/autotests.js || exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/koorchik/node-mole-rpc-transport-webworker.git"
+        "url": "git+https://github.com/Digital-Health-Outcomes-Models/node-dho-rpc-transport-webworker.git"
     },
     "engines": {
         "node": ">=10.0.0"
     },
     "peerDependencies": {
-        "mole-rpc": "1.*"
+        "dho-rpc": "1.*"
     },
     "devDependencies": {
-        "mole-rpc": "1.*"
+        "dho-rpc": "1.*"
     },
     "keywords": [
         "jsonrpc",
@@ -30,7 +30,7 @@
         "worker",
         "http",
         "api",
-        "mole-rpc",
+        "dho-rpc",
         "mole",
         "transport",
         "mole-transport"
@@ -38,7 +38,7 @@
     "author": "koorchik",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/koorchik/node-mole-rpc-transport-webworker/issues"
+        "url": "https://github.com/Digital-Health-Outcomes-Models/issues"
     },
-    "homepage": "https://github.com/koorchik/node-mole-rpc-transport-webworker#readme"
+    "homepage": "https://github.com/Digital-Health-Outcomes-Models#readme"
 }

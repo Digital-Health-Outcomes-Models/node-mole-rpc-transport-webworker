@@ -1,6 +1,6 @@
 import 'babel-polyfill';
-import MoleClient from 'mole-rpc/MoleClientProxified';
-import MoleServer from 'mole-rpc/MoleServer';
+import MoleClient from 'dho-rpc/MoleClientProxified';
+import MoleServer from 'dho-rpc/MoleServer';
 import TransportClient from '../../TransportClient';
 import TransportServer from '../../TransportServer';
 import { substract, divide } from '../utils';

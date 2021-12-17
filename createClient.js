@@ -1,11 +1,11 @@
-import MoleClient from 'mole-rpc/MoleClientProxified';
+import MoleClientProxified from 'dho-rpc/MoleClientProxified';
 import TransportClient from './TransportClient';
 
 function createClient(worker, options = {}) {
-    return new MoleClient({
+    return new MoleClientProxified({
         ...options,
         transport: new TransportClient({ worker })
     });
 }
 
-module.exports = createClient;
+export default createClient;

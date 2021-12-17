@@ -1,4 +1,4 @@
-import MoleServer from 'mole-rpc/MoleServer';
+import MoleServer from 'dho-rpc/MoleServer';
 import TransportServer from './TransportServer';
 
 async function expose(methods) {
@@ -7,4 +7,4 @@ async function expose(methods) {
     await server.run();
 }
 
-module.exports = expose;
+export default expose;

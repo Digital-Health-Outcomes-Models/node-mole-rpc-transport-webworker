@@ -1,5 +1,5 @@
 import 'babel-polyfill';
-import MoleClient from 'mole-rpc/MoleClientProxified';
+import MoleClient from 'dho-rpc/MoleClientProxified';
 import TransportClient from '../../TransportClient';
 
 async function main() {

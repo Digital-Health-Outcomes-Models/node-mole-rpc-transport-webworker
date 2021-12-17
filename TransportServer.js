@@ -14,4 +14,4 @@ class TransportServer {
     }
 }
 
-module.exports = TransportServer;
+export default TransportServer;

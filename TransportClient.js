@@ -15,4 +15,4 @@ class TransportClient {
     }
 }
 
-module.exports = TransportClient;
+export default TransportClient;

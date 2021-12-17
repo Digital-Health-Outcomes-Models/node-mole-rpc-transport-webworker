@@ -1,13 +1,13 @@
 Webworker Transport for Mole RPC (JSON RPC Library) 
 ---------------------------------------------------
 
-[![npm version](https://badge.fury.io/js/mole-rpc-transport-webworker.svg)](https://badge.fury.io/js/mole-rpc-transport-webworker)
-[![Build Status](https://travis-ci.org/koorchik/node-mole-rpc-transport-webworker.svg?branch=master)](https://travis-ci.org/koorchik/node-mole-rpc-transport-webworker)
-[![Known Vulnerabilities](https://snyk.io/test/github/koorchik/node-mole-rpc-transport-webworker/badge.svg?targetFile=package.json)](https://snyk.io/test/github/koorchik/node-mole-rpc-transport-webworker?targetFile=package.json)
+[![npm version](https://badge.fury.io/js/dho-rpc-transport-webworker.svg)](https://badge.fury.io/js/dho-rpc-transport-webworker)
+[![Build Status](https://travis-ci.org/koorchik/node-dho-rpc-transport-webworker.svg?branch=master)](https://travis-ci.org/koorchik/node-dho-rpc-transport-webworker)
+[![Known Vulnerabilities](https://snyk.io/test/github/koorchik/node-dho-rpc-transport-webworker/badge.svg?targetFile=package.json)](https://snyk.io/test/github/koorchik/node-dho-rpc-transport-webworker?targetFile=package.json)
 
 **Offload intensive calculations to WebWorker with just several lines of code.**
 
-[Mole-RPC](https://www.npmjs.com/package/mole-rpc) is a tiny transport agnostic JSON-RPC 2.0 client and server which can work both in NodeJs, Browser, Electron etc.
+[dho-rpc](https://www.npmjs.com/package/dho-rpc) is a tiny transport agnostic JSON-RPC 2.0 client and server which can work both in NodeJs, Browser, Electron etc.
 
 This is WebWorker based transport but there are [many more transports](https://www.npmjs.com/search?q=keywords:mole-transport). 
 
@@ -18,14 +18,14 @@ People usually send data to WebWorker in a form like `{id, method, params}` in J
 
 So, why to write own solution every time? This transport allows you use JSON RPC for calling methods in WebWorkers. Moreover, it will handle all of edge-cases like errors processing, timeouts, batch calls, bidirectional communication etc. 
 
-**Mole-RPC has zero dependencies and is a very small library.**
+**dho-rpc has zero dependencies and is a very small library.**
 
 ## Usage example (with simplified API)
 
 **worker.js**
 
 ```javascript
-import expose from 'mole-rpc-transport-webworker/expose';
+import expose from 'dho-rpc-transport-webworker/expose';
 
 const sum = (a, b) => a + b;
 const multiply = (a, b) => a * b;
@@ -37,7 +37,7 @@ expose({ sum, multiply }).catch(console.error);
 **index.js**
 
 ```javascript
-import createClient from 'mole-rpc-transport-webworker/createClient';
+import createClient from 'dho-rpc-transport-webworker/createClient';
 
 async function main() {
   const client = createClient(new Worker('worker.js'));
@@ -47,7 +47,7 @@ async function main() {
 main().then(console.log, console.error);
 ```
 
-You can pass extra Mole-RPC options to createClient as second parameter.
+You can pass extra dho-rpc options to createClient as second parameter.
 
 For example
 

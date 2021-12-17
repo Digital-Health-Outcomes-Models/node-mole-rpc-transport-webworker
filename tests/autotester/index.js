@@ -1,8 +1,8 @@
 import 'babel-polyfill';
-import MoleClient from 'mole-rpc/MoleClient';
-import MoleClientProxified from 'mole-rpc/MoleClientProxified';
-import MoleServer from 'mole-rpc/MoleServer';
-import X from 'mole-rpc/X';
+import MoleClient from 'dho-rpc/MoleClient';
+import MoleClientProxified from 'dho-rpc/MoleClientProxified';
+import MoleServer from 'dho-rpc/MoleServer';
+import X from 'dho-rpc/X';
 import AutoTester from 'mole-rpc-autotester';
 
 import TransportClient from '../../TransportClient';
